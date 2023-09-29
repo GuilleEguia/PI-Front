@@ -1,0 +1,94 @@
+body {
+    font-family: "Raleway Regular", sans-serif;
+    background-color: #424769;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #2d3250;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+h1 {
+    font-family: "Raleway Semibold", sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.form-group {
+    margin: 30px 0;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #424769;
+    color: #ffffff;
+    font-family: "Raleway Regular", sans-serif;
+    margin-top: 5px;
+}
+
+.login-button {
+    background-color: #ffad5a;
+    color: #2d3250;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Raleway Semibold", sans-serif;
+    margin-top: 20px;
+}
+
+.login-button:hover {
+    background-color: #ffad5a;
+}
+
+.register-link {
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffad5a;
+    font-weight: bold;
+}
+
+.logo-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-logo {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+}
+

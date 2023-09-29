@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Página Principal</title>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="selected-servers" id="selected-servers"></div>
+        <button class="sidebar-button" data-tooltip="Añadir un servidor">
+            <img src="more-f.svg" style="width: 52px; height: 52px;" alt="Añadir un servidor">
+            <span class="sidebar-description"></span>
+        </button>
+
+        <button class="sidebar-button" data-tooltip="Explorar servidores" id="explore-button">
+            <img src="discover-f.svg" style="width: 52px; height: 52px;" alt="Explorar servidores">
+            <span class="sidebar-description"></span>
+        </button>
+
+        <div class="user-profile">
+            <img src="user-f.svg">
+            <span class="username">Nombre</span>
+        </div>
+        
+    </aside>
+
+    <aside class="channel-sidebar" id="channel-sidebar">
+        <div class="channel-header">
+            <button class="add-channel-button">Añadir un canal</button>
+        </div>
+        <ul class="channel-list"></ul>
+    </aside>
+
+    <main class="main-content">
+        <p class="no-server-message" id="no-server-message">Aún no te has unido a un servidor <br> Intenta buscar uno o crea uno propio.</p>
+        <div id="search-container">
+            <input type="text" id="search-input" placeholder="Buscar servidores...">
+            <button id="search-button" class="server-button">Buscar</button>
+        </div>
+
+        <div class="grid-container" id="server-grid"></div>
+
+        <div class="chat-container">
+            <div class="chat-history" id="chat-history"></div>
+            <div class="chat-input hidden" id="entry-bar">
+                <input type="text" id="message-input" placeholder="Escribe un mensaje...">
+                <button id="send-button">
+                    <img src="send.svg" style="width: 24px; height: 24px;" alt="Enviar">
+                </button>
+            </div>
+        </div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
